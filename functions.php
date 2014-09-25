@@ -20,7 +20,7 @@ add_image_size( 'post-thumb', 320, 210 );
  * See http://codex.wordpress.org/Navigation_Menus
  */
 function register_my_menu() {
-	register_nav_menu( 'header', 'Header Menu' );
+    register_nav_menu( 'header', 'Header Menu' );
 }
 add_action( 'init', 'register_my_menu' );
 
@@ -81,16 +81,16 @@ function posts_column_views($defaults){
     return $defaults;
 }
 function posts_custom_column_views($column_name, $id){
-	if($column_name === 'post_views'){
+    if($column_name === 'post_views'){
         echo getPostViews(get_the_ID());
     }
 }
 
 function st_ajaxurl(){
     ?>
-    <script>
-    var ajaxurl = '<?php echo admin_url('admin-ajax.php') ?>';
-    </script>
+        <script>
+        var ajaxurl = '<?php echo admin_url('admin-ajax.php') ?>';
+        </script>
     <?php
 }
 
@@ -99,12 +99,12 @@ add_action('wp_head','st_ajaxurl');
 if ( is_user_logged_in() ) {
     function st_logout(){
         ?>
-        <script>
-        jQuery(document).ready(function($) {
-            var anchor = '<a href="<?php echo wp_logout_url(home_url()); ?>" title="Logout">Logout</a>';
-            $('li.login.menu-item').html(anchor);
-        });
-        </script>
+            <script>
+            jQuery(document).ready(function($) {
+                var anchor = '<a href="<?php echo wp_logout_url(home_url()); ?>" title="Logout">Logout</a>';
+                $('li.login.menu-item').html(anchor);
+            });
+            </script>
         <?php
     }
 
@@ -114,14 +114,14 @@ else
 {
     function st_download(){
         ?>
-        <script>
-        jQuery(document).ready(function($) {
-            $('.download-article .download-content a').click(function(){
-                window.location = '<?php echo home_url()."/benefit"  ?>';
-                return false;
+            <script>
+            jQuery(document).ready(function($) {
+                $('.download-article .download-content a').click(function(){
+                    window.location = '<?php echo home_url()."/benefit"  ?>';
+                    return false;
+                });
             });
-        });
-        </script>
+            </script>
         <?php
     }
 
@@ -140,59 +140,53 @@ function st_handle_registration(){
         $province  = trim( $_POST['province '] );
         $pswrd      = $_POST['passwrd'];
         $repsw      = $_POST['repsw'];
-
+ 
         if( empty( $_POST['fullname'] ) )
          $error .= '<p class="form-message form-error">Enter Full Name</p>';
 
-     if( empty( $_POST['username'] ) )
+        if( empty( $_POST['username'] ) )
          $error .= '<p class="form-message form-error">Enter Username</p>';
 
-     if( empty( $_POST['company'] ) )
+        if( empty( $_POST['company'] ) )
          $error .= '<p class="form-message form-error">Enter Company Name</p>';
 
-     if( empty( $_POST['department'] ) )
+        if( empty( $_POST['department'] ) )
          $error .= '<p class="form-message form-error">Enter Select Departement</p>';
 
-     if( empty( $_POST['province'] ) )
+        if( empty( $_POST['province'] ) )
          $error .= '<p class="form-message form-error">Enter Province</p>';
-
-     if( empty( $_POST['mail_id'] ) )
+ 
+        if( empty( $_POST['mail_id'] ) )
          $error .= '<p class="form-message form-error">Enter Email Id</p>';
-     elseif( !filter_var($email, FILTER_VALIDATE_EMAIL) )
+         elseif( !filter_var($email, FILTER_VALIDATE_EMAIL) )
          $error .= '<p class="form-message form-error">Enter Valid Email</p>';
-
-     if( empty( $_POST['passwrd'] ) )
+         
+        if( empty( $_POST['passwrd'] ) )
          $error .= '<p class="form-message form-error">Password should not be blank</p>';
 
-     if( $_POST['passwrd'] != $_POST['repsw'] )
+        if( $_POST['passwrd'] != $_POST['repsw'] )
          $error .= '<p class="form-message form-error">Check your re password</p>';
-
-     if( empty( $error ) ){
-        $status = wp_create_user( $uname, $pswrd ,$email );
-
-        if( is_wp_error($status) ){
-            $msg = '';
-            foreach( $status->errors as $key=>$val ){
-                foreach( $val as $k=>$v ){
-                    $msg = '<p class="form-message form-error">'.$v.'</p>';
+ 
+        if( empty( $error ) ){
+            $status = wp_create_user( $uname, $pswrd ,$email );
+ 
+            if( is_wp_error($status) ){
+                $msg = '';
+                foreach( $status->errors as $key=>$val ){
+                    foreach( $val as $k=>$v ){
+                        $msg = '<p class="form-message form-error">'.$v.'</p>';
+                    }
                 }
+                echo $msg;
+            }else{
+                $msg = '<p class="form-message form-succes">Registration Successful Login <a href="'.get_bloginfo('url').'/login'.'">here</a></p>';
+                echo $msg;
             }
-            echo $msg;
-        }else{
-            $msg = '<p class="form-message form-succes">Registration Successful Login <a href="'.get_bloginfo('url').'/login'.'">here</a></p>';
-            echo $msg;
-            ?>
-
-            <script>
-            window.location.href="http://yourminingpartner.3m.com?ref=thank.html";
-            </script>
-            <?php
+        } else {
+            echo $error;
         }
-    } else {
-        echo $error;
+        die(1);
     }
-    die(1);
-}
 }
 add_action( 'wp_ajax_register_action', 'st_handle_registration' );
 add_action( 'wp_ajax_nopriv_register_action', 'st_handle_registration' );
@@ -212,7 +206,7 @@ add_action( 'profile_update', 'user_metadata' );
 
 //add columns to User panel list page
 function add_user_columns($column) {
-    $column['province']     = 'Province';
+    $column['province']      = 'Province';
     $column['company']      = 'Company';
     $column['department']   = 'Department';
 
@@ -226,14 +220,14 @@ function add_user_column_data( $val, $column_name, $user_id ) {
 
     switch ($column_name) {
         case 'company' :
-        return $user->company;
-        break;
+            return $user->company;
+            break;
         case 'province' :
-        return $user->province;
-        break;
+            return $user->province;
+            break;
         case 'department' :
-        return $user->department;
-        break;
+            return $user->department;
+            break;
         default:
     }
     return;
@@ -247,7 +241,7 @@ function mytheme_comment($comment, $args, $depth) {
         <span class="comment_date"><?php echo date('d/m/Y',strtotime($comment->comment_date)) ?></span>
         <p><?php echo $comment->comment_content ?></p>
     </li>
-    <?php
+<?php
 }
 
 if ( ! function_exists('word_limiter'))

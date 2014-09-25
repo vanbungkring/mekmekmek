@@ -23,16 +23,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
 <div class="header-container">
-	<div class="fakeheader"></div>
+  <div class="fakeheader"></div>
 
     <div class="navbar navbar-inverse" role="navigation">
       <div class="container header">
-		<h1 class="logo">Yourmining Partner</h1>
-		<div class="sub-logo">
-			<span class="sub-logo-one">Professionally Organized by</span>
-			<span class="sub-logo-two"></span>
-			<div class="clearfix"></div>
-		</div>
+    <h1 class="logo">Yourmining Partner</h1>
+    <div class="sub-logo">
+      <span class="sub-logo-one">Professionally Organized by</span>
+      <a href="http://3m.com/mining/indonesia" target=_blank><span class="sub-logo-two"></span></a>
+      <div class="clearfix"></div>
+    </div>
 
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -44,7 +44,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <a class="navbar-brand" href="#"></a>
         </div>
         <div class="collapse navbar-collapse">
-        	<?php wp_nav_menu( array( 'theme_location' => 'header','menu_class' => 'nav navbar-nav navbar-right' ) ); ?>
+          <?php wp_nav_menu( array( 'theme_location' => 'header','menu_class' => 'nav navbar-nav navbar-right' ) ); ?>
         </div>
       </div>
     </div>
