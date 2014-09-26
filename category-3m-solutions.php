@@ -153,9 +153,9 @@
 		</section>
 	</div>
 	<div class="row">
-		<section class="col-md-12" id="downloadables">
+		<section class="col-md-12">
 			<div class="row">
-				<h2 class="content-title col-md-12">3M SOLUTIONS- DOWNLOADABLE STUFFS</h2>
+				<h2 class="content-title col-md-12" id="#downloadables" >3M SOLUTIONS- DOWNLOADABLE STUFFS</h2>
 			</div>
 			<div class="row">
 				<?php $args=array('category_name' => 'downloadable-stuffs','showposts'=> 10); ?>
