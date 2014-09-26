@@ -169,9 +169,10 @@
 					<?php
 					// check if the post has a Post Thumbnail assigned to it.
 					if ( has_post_thumbnail() ) {
-						the_post_thumbnail('post-thumb');
+						the_post_thumbnail('post_thumbs_download');
 					} 
 					?>
+					<br>
 					<div class="download-content">
 						<?php the_content('');?>
 					</div>
