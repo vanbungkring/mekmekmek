@@ -43,7 +43,7 @@
 			<p>
 				Phone: <?php echo get_post_meta(get_the_ID(), 'contact_phone', true); ?><br>
 				Fax : <?php echo get_post_meta(get_the_ID(), 'contact_fax', true); ?><br>
-				MOBILE : <?php echo get_post_meta(get_the_ID(), 'contact_mobile', true); ?>
+				Mobile : <?php echo get_post_meta(get_the_ID(), 'contact_mobile', true); ?>
 			</p>
 			<p>
 				<?php echo get_post_meta(get_the_ID(), 'contact_day_open', true); ?><br>
