@@ -14,6 +14,7 @@ set_post_thumbnail_size( 110, 110 );
 // additional image sizes
 // delete the next line if you do not need additional image sizes
 add_image_size( 'post-thumb', 320, 210 );
+add_image_size( 'post_thumbs_download', 300, 210 );
 
 /*
  * Register for navigation menu
