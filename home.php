@@ -2,10 +2,11 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width,maximum-scale=1.0" />
-<title>	<?php wp_title( '|', true, 'right' ); bloginfo( 'name' );?> </title>
+	<meta name="title" content="3M Mining Partner | Find Safety Equipment, Solution And Training" />
+	<meta name="description" content="3M provides mining products for mining solutions that consist of safety sign, electrical maintenance, worker and site safety products" />
+	<meta name="keywords" content="Safety equipment" />
+	<title>	<?php wp_title( '|', true, 'right' ); bloginfo( 'name' );?> </title>
 
 	<meta name="title" content="<?php wp_title( '|', true, 'right' ); bloginfo( 'name' );?>" />
 	<meta name="description" content="3M provides mining products for mining solutions that consist of safety sign, electrical maintenance, worker and site safety products" />
