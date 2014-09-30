@@ -47,7 +47,7 @@
 <body>
 	<?php get_header(); ?>
 	<div class="content container">
-		<?php if( function_exists('cyclone_slider') ) cyclone_slider('tester'); ?>
+		<?php if( function_exists('cyclone_slider') ) cyclone_slider('homepage'); ?>
 	</div>
 	<div class="content container">
 		<div class="row blok">
