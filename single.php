@@ -10,8 +10,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,maximum-scale=1.0" />
-	<title>3M Mining Partner | Find Safety Equipment, Solution And Training</title>
-	
+	<title>3M Mining Partner | <?php the_title();?></title>
+	<meta name="title" content="3M Mining Partner | <?php the_title();?>" />
 	<?php wp_head();?>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
