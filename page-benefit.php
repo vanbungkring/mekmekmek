@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width,maximum-scale=1.0" />
 	<title>3M Mining Partner | Safety Equipment And Solution For Mining Industry</title>
 	<meta name="title" content="3M Mining Partner | Safety Equipment And Solution For Mining Industry" />
-	
+	<meta name="description" content="See our safety and mining products from safety sign, helmet, protective coveralls, respirator, hearing and other mining equipments" />
 	<?php wp_head();?>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

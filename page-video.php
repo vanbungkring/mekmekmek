@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,maximum-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>	<?php wp_title( '|', true, 'right' ); bloginfo( 'name' );?> </title>
+	<title>	3M Mining Partner | Safety And Mining Equipment Video</title>
+	<meta name="description" content="3M Mining Partner | Safety And Mining Equipment Video" />
 	
 	<?php wp_head();?>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->

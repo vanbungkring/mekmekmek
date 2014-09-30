@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,maximum-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>	3M Mining Partner | Safety And Mining Equipment Video </title>
+	<title>	3M Mining Partner | <?php the_title();?> </title>
 	
 	<?php wp_head();?>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
