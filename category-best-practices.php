@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>3M Mining Partner | Tips, Best Practice And Recommendation For Miner</title>
-	<meta name="viewport" content="width=device-width,maximum-scale=1.0" />
 	<meta name="title" content="3M Mining Partner | Tips, Best Practice And Recommendation For Miner" />
+	<meta name="viewport" content="width=device-width,maximum-scale=1.0" />
+	
 	<meta name="description" content="Read all tips about safety working environment, best practices of mining industry, and case study for miners about mining products" />
 	<meta name="keywords" content="Mining tips" />
 	<?php wp_head();?>
