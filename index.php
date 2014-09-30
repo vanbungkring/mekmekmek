@@ -6,7 +6,7 @@
 	<meta name="title" content="3M Mining Partner | Find Safety Equipment, Solution And Training" />
 	<meta name="description" content="3M provides mining products for mining solutions that consist of safety sign, electrical maintenance, worker and site safety products" />
 	<meta name="keywords" content="Safety equipment" />
-	<title>	<?php wp_title( '|', true, 'right' ); bloginfo( 'name' );?> </title>
+	<title>	3M Mining Partner | Find Safety Equipment, Solution And Training</title>
 	<?php wp_head();?>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
