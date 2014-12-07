@@ -57,7 +57,7 @@
 				<div class="row">
 					<?php wp_login_form( $args ); ?>
 				</div>
-				<p class="link-forgot hidden">
+				<p class="link-forgot">
 					<a href="<?php echo wp_lostpassword_url(); ?>" title="Forget Password?">Forget Password?</a>
 				</p>
 				<p class="login-p">New to yourminingpartner.com?</p>
